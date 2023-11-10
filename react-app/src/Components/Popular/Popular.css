@@ -1,9 +1,10 @@
 .popular{
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    height: 90vh;
+    height: 100vh;
 }
 
 .popular p{
@@ -27,4 +28,45 @@
     margin-top: 50px;
     display: flex;
     gap: 30px;
+    transition: transform 0.5s ease-in-out;
 }
+
+.slider-container{
+    position: relative;
+}
+
+.slider-controls{
+    display: flex;
+    position: absolute;
+    gap: 20px;
+    padding-top: 100px;
+    cursor: pointer;
+    top: 80%;
+    transform: translateY(-80%);
+}
+
+.slider-controls img{
+    width: 38px;
+}
+
+.slider-dots {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    margin-top: 10px;
+    top: 85%;
+    transform: translateY(-85%);
+  }
+  
+  .slider-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #171717; 
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .slider-dot.active {
+    background-color: #FF5733; 
+  }
