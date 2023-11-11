@@ -14,6 +14,9 @@ const Item = (props)=> {
           ₹{props.old_price}
         </div>
       </div>
+      <div className="user_review">
+          {props.user_review}
+      </div>
     </div>
   )
 }

@@ -7,28 +7,26 @@
     height: 100vh;
 }
 
-.popular p{
+.popular h1{
     color: #171717;
     font-size: 50px;
     font-weight: 600;
+    max-width: 200px;
+    white-space: nowrap;
+    padding-right: 70%;
 }
 
 .popular span{
     color: #FF5733;
 }
 
-.popular hr{
-    width: 200px;
-    height: 6px;
-    border-radius: 10px;
-    background: #252525;
-}
 
 .popular_items{
     margin-top: 50px;
     display: flex;
     gap: 30px;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 5s ease-in-out;
+    cursor: pointer;
 }
 
 .slider-container{
