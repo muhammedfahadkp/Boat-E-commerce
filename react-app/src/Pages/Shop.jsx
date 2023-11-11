@@ -3,6 +3,8 @@ import Hero from '../Components/Hero/Hero'
 import Popular from '../Components/Popular/Popular'
 import Offers from '../Components/OffersBanner/Offers'
 import NewCollection from '../Components/NewCollections/NewCollections'
+import NewsLetter from '../Components/NewsLetter/NewsLetter'
+import Footer from '../Components/Footer/Footer'
 
 function Shop() {
   return (
@@ -11,6 +13,8 @@ function Shop() {
       <Popular/>
       <Offers/>
       <NewCollection/>
+      <NewsLetter/>
+      <Footer/>
     </div>
   )
 }
