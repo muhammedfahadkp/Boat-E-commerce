@@ -6,6 +6,9 @@ import Product from "./Pages/Product"
 import Cart from "./Pages/Cart"
 import LoginSignup from "./Pages/LoginSignup"
 import Footer from "./Components/Footer/Footer";
+import HeadDrop_Banner from './Components/Assets/HeadDropBanner.png'
+import OnEar_Banner from './Components/Assets/OnEarBanner.png'
+import BarSound_Banner from './Components/Assets/BarSoundBanner.png'
 
 
 function App() {
@@ -18,9 +21,9 @@ function App() {
       <Routes>
 
         <Route path="/" element={<Shop/>}/>
-        <Route path="/HeadDrops" element={<ShopCategory category="HeadDrops"/>}/>
-        <Route path="/OnEar" element={<ShopCategory category="OnEar"/>}/>
-        <Route path="/BarSound" element={<ShopCategory category="BarSound"/>}/>
+        <Route path="/HeadDrop" element={<ShopCategory banner={HeadDrop_Banner} category="HeadDrop"/>}/>
+        <Route path="/OnEar" element={<ShopCategory banner={OnEar_Banner} category="OnEar"/>}/>
+        <Route path="/BarSound" element={<ShopCategory banner={BarSound_Banner} category="BarSound"/>}/>
 
         <Route path="/Product" element= {<Product/>}>
           <Route path=":productId"  element={<Product/>}/>
@@ -28,7 +31,7 @@ function App() {
 
         <Route path="/Cart" element={<Cart/>}/>
 
-        <Route path="/Login" element={<LoginSignup/>}/>
+        <Route path="/LoginSignup" element={<LoginSignup/>}/>
 
       </Routes>
       <Footer/>

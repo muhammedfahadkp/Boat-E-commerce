@@ -39,7 +39,7 @@ let all_product = [
   {
     id: 1,
     name: "Airdopes 131",
-    category: "EarDrops",
+    category: "HeadDrop",
     image: p1_img,
     new_price: 899,
     old_price: 2900,
@@ -47,7 +47,7 @@ let all_product = [
   {
     id: 2,
     name: "Airdopes 161",
-    category: "EarDrops",
+    category: "HeadDrop",
     image: p2_img,
     new_price: 899,
     old_price: 1499,
@@ -55,7 +55,7 @@ let all_product = [
   {
     id: 3,
     name: "Airdopes 161-Hulk Edition",
-    category: "EarDrops",
+    category: "HeadDrop",
     image: p3_img,
     new_price: 1099,
     old_price: 3490,
@@ -63,7 +63,7 @@ let all_product = [
   {
     id: 4,
     name: "immortal 131",
-    category: "EarDrops",
+    category: "HeadDrop",
     image: p4_img,
     new_price: 999,
     old_price: 2490,
@@ -71,7 +71,7 @@ let all_product = [
   {
     id: 5,
     name: "Airdopes 200 Plus",
-    category: "EarDrops",
+    category: "HeadDrop",
     image: p5_img,
     new_price: 1299,
     old_price: 5490,
@@ -79,7 +79,7 @@ let all_product = [
   {
     id: 6,
     name: "Airdopes 170",
-    category: "EarDrops",
+    category: "HeadDrop",
     image: p6_img,
     new_price: 1490,
     old_price: 2500,
@@ -87,7 +87,7 @@ let all_product = [
   {
     id: 7,
     name: "Airdopes 141 ANC",
-    category: "EarDrops",
+    category: "HeadDrop",
     image: p7_img,
     new_price: 2500,
     old_price: 8499,
@@ -95,7 +95,7 @@ let all_product = [
   {
     id: 8,
     name: "Airpods 161 Pro ",
-    category: "EarDrops",
+    category: "HeadDrop",
     image: p8_img,
     new_price: 1499,
     old_price: 2499,
@@ -103,7 +103,7 @@ let all_product = [
   {
     id: 9,
     name: "Airdopes Alpha",
-    category: "EarDrops",
+    category: "HeadDrop",
     image: p9_img,
     new_price: 1750,
     old_price: 3650,
@@ -111,7 +111,7 @@ let all_product = [
   {
     id: 10,
     name: "Airdopes Bliss ANC ",
-    category: "EarDrops",
+    category: "HeadDrop",
     image: p10_img,
     new_price: 2999,
     old_price: 5599,
@@ -119,7 +119,7 @@ let all_product = [
   {
     id: 11,
     name: "Airdopes 121 V2 ",
-    category: "EarDrops",
+    category: "HeadDrop",
     image: p11_img,
     new_price: 1899,
     old_price: 3299,
@@ -127,7 +127,7 @@ let all_product = [
   {
     id: 12,
     name: "Airdopes 181 ",
-    category: "EarDrops",
+    category: "HeadDrop",
     image: p12_img,
     new_price: 1199,
     old_price: 2499,

@@ -85,7 +85,7 @@ const NavBar = () => {
         </li>
       </ul>
       <div className="nav-login-cart">
-        <button>Login</button>
+       <Link to={'./LoginSignup'}><button>Login</button></Link>
         <div className="user-profile">
           <img src={user_pic} alt="" className="user_profile_pic" />
         </div>
