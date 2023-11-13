@@ -81,3 +81,10 @@
     cursor: pointer;
     font-weight: 500;
 }
+
+.loginSignup_Agree input{
+    width: 20px; 
+    height: 20px; 
+    cursor: pointer;
+    accent-color: #ff4141;
+}

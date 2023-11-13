@@ -21,6 +21,7 @@ const NewCollections = () => {
             />
           })}
       </div>
+      <div className="more_button">Explore More</div>
     </div>
   )
 }

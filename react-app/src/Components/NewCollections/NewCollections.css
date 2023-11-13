@@ -4,7 +4,6 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    margin-bottom: 100px;
 }
 
 .new_collections h1{
@@ -22,4 +21,18 @@
    margin-top: 50px;
    gap: 30px;
    cursor: pointer;
+}
+
+.more_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 233px;
+    height: 69px;
+    border-radius: 75px;
+    background: #ededed;
+    color: #787878;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
 }
