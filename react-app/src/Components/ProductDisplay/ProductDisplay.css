@@ -1,7 +1,6 @@
 .productDisplay{
     display: flex;
     margin: 0px 150px;
-    padding-top: 50px;
 }
 
 .productDisplay_left{
