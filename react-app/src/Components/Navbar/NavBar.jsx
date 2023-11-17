@@ -89,7 +89,7 @@ const NavBar = () => {
         <div className="user-profile">
           <img src={user_pic} alt="" className="user_profile_pic" />
         </div>
-        <img src={cart_icon} alt="cart_icon" />
+        <Link to={'/Cart'}><img src={cart_icon} alt="cart_icon" /></Link>
         <div className="nav-cart-counter">0</div>
       </div>
     </div>

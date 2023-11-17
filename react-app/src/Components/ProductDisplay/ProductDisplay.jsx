@@ -1,11 +1,19 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import './ProductDisplay.css'
 import star_icon from '../Assets/star_icon.png'
 import star_dull_icon from '../Assets/star_dull_icon.png'
+import { ShopContext } from '../../Context/ShopContext'
 
 const ProductDisplay = (props) => {
     
-    const { product } = props;
+  const { product } = props;
+
+  // function for add to cart option
+  const {addToCart} = useContext(ShopContext)
+
+
+
+  // To Show Selected Option
   const [selectedColor, setSelectedColor] = useState('');
 
   const handleColorSelection = (colorClass) => {
@@ -73,7 +81,7 @@ const ProductDisplay = (props) => {
           )}
           </div>
         </div>
-        <button>Add to Cart</button>
+        <button onClick={()=>{addToCart(product.id)}}>Add to Cart</button>
       </div>
     </div>
   )
