@@ -9,7 +9,9 @@ const Cartitems = () => {
 
     // Calling function using Context
 
-    const {all_product, cartItems, removeFromCart} = useContext(ShopContext)
+    const {all_product, cartItems, removeFromCart, getCartTotalAmount, addToCart} = useContext(ShopContext)
+    
+    
 
   return (
     <div className='cartItems'>
@@ -21,34 +23,46 @@ const Cartitems = () => {
             <p>Total</p>
             <p>Remove</p>
         </div>
-        {all_product.map((e)=>{
-            if (cartItems[e.id]>0)  {
-                return(
-                <div>
-                    <div className="cartItems_format cartItems_main_format">
-                        <div className='images'>
-                        <img src={e.image} alt="" className='CartIcon_product_icon' />
-                        <img src={add_more} alt="" className='cartItems_quantity' />
-                        </div>
-                        <p>{e.name}</p>
-                        <p>₹{e.new_price}</p>
-                        <div className='quantity'>
-                        <p>{cartItems[e.id]}</p>
-                        </div>
-                        <p>₹{e.new_price*cartItems[e.id]}</p>
-                        <img className='removeIcon' src={remove_icon} onClick={()=>{removeFromCart(e.id)}} />
-                    </div>
-                </div>)
-            }
-            return null;
+
+        {all_product.map((e) => {
+        if (cartItems[e.id] > 0) {
+          return (
+            <div key={e.id}>
+              <div className="cartItems_format cartItems_main_format">
+                <div className='images'>
+                  <img src={e.image} alt="" className='CartIcon_product_icon' />
+                  <img
+                    src={add_more}
+                    alt=""
+                    className='cartItems_quantity'
+                    onClick={() => { addToCart(e.id) }}
+                  />
+                </div>
+                <p>{e.name}</p>
+                <p>₹{e.new_price}</p>
+                <div className='quantity'>
+                  <p>{cartItems[e.id]}</p>
+                </div>
+                <p>₹{e.new_price * cartItems[e.id]}</p>
+                <img
+                  className='removeIcon'
+                  src={remove_icon}
+                  onClick={() => { removeFromCart(e.id) }}
+                />
+              </div>
+            </div>
+          );
+        }
+        return null;
         })}
+
         <div className="cartItems_down">
             <div className="cartItems_total">
                 <h1>Your Cart Total</h1>
                 <div>
                     <div className="cartItems_total_items">
                         <p>Subtotal</p>
-                        <p>₹{0}</p>
+                        <p>₹{getCartTotalAmount()}</p>
                     </div>
                     <hr />
                     <div className="cartItems_total_items">
@@ -56,13 +70,13 @@ const Cartitems = () => {
                         <p>₹{0}</p>
                     </div>
                     <div className="cartItems_total_items">
-                        <p>Bank charge</p>
-                        <p>₹{0}</p>
+                        <p>Discount</p>
+                        <p>-₹{0}</p>
                     </div>
                     <hr />
                     <div className="cartItems_total_items">
                         <h3>Total</h3>
-                        <h2>₹{0}</h2>
+                        <h2>₹{getCartTotalAmount()}</h2>
                     </div>
                 </div>
                 <button>Buy Now</button>
